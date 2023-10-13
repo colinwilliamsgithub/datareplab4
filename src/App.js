@@ -5,6 +5,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Header from './mycomponents/header';
 import Footer from './mycomponents/footer';
+import Create from './mycomponents/create';
+import Read from './mycomponents/read';
 import Content from './mycomponents/content';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
@@ -26,8 +28,8 @@ function App() {
       {/* Creates links that allows user to access different pages */}
       <Routes>
         <Route path='/' element={<Content></Content>}></Route>
-        <Route path='create' element={<Header></Header>}></Route>
-        <Route path='read' element={<Footer></Footer>}></Route>
+        <Route path='create' element={<Create></Create>}></Route>
+        <Route path='read' element={<Read></Read>}></Route>
       </Routes>
     </div>
     </BrowserRouter>
