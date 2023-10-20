@@ -4,12 +4,14 @@ function BookItem(props) {
     return (
         <div>
             <Card>
+                {/* Displays book title */}
                 <Card.Header>{props.myBook.title}</Card.Header>
                 <Card.Body>
                     <blockquote className="blockquote mb-0"></blockquote>
-                    {/* Added book image */}
+                    {/* Displays book image */}
                     <img src={props.myBook.thumbnailUrl}></img>
                     <footer>
+                        {/* Displays book author */}
                         {props.myBook.authors[0]}
                     </footer>
                 </Card.Body>
